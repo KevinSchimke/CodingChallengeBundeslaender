@@ -5,13 +5,13 @@ async function loadBundeslaender(){
     for (let index = 0; index < responseData.length; index++) {
         const bundesland = responseData[index];
         let name = bundesland['name'];
-        let population = bundesland['population'];
+        let population = (bundesland['population'] + '').replace(".",",") + ' Millionen';
         let url = bundesland['url'];
         console.log(bundesland);
         document.getElementById('contentArea').innerHTML += /*html*/`
-        <a href="${url}" target="_blank">
+        <a class="bundeslandContainer" href="${url}" target="_blank">
             <div>${name}</div>
-            <div>${population}</div>
+            <div class="textColorGrey">${population}</div>
         </a>
         `;
     }

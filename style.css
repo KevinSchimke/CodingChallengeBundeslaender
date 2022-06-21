@@ -3,9 +3,53 @@ body{
     justify-content: center;
 }
 
-.contentArea{
-    /* max-width: 1024px; */
+h1{
+    background-color: #dddd;
+    color: #6666;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 16px 32px 16px 32px;
+    margin: 5px;
+}
+
+#contentArea{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content{
+    max-width: 1024px;
     background-color: aquamarine;
-    width: 1024px;
-    height: 512px;
+
+}
+
+.bundeslandContainer{
+    text-decoration: none;
+    display: block;
+    color: rgb(98,68,69);
+    border: 10px solid #eeee;
+    width: calc(33.333% - 50px);
+    margin: 5px;
+    padding: 10px;
+}
+
+.bundeslandContainer div:first-child{
+    padding-bottom: 10px;
+}
+
+.textColorGrey{
+    color: rgb(161,178,197);
+}
+
+
+@media (max-width: 800px) {
+    .bundeslandContainer{
+        width: calc(50% - 50px);
+    }
+}
+
+@media (max-width: 500px) {
+    .bundeslandContainer{
+        width: calc(100% - 50px);
+    }
 }
