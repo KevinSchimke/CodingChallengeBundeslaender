@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.contentArea{
+    /* max-width: 1024px; */
+    background-color: aquamarine;
+    width: 1024px;
+    height: 512px;
+}
