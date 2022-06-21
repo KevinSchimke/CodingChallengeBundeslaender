@@ -1,14 +1,14 @@
 body{
     display: flex;
     justify-content: center;
+    color: #66697c;
 }
 
 h1{
     background-color: #dddd;
-    color: #6666;
     font-size: 34px;
     font-weight: bold;
-    padding: 16px 32px 16px 32px;
+    padding: 16px;
     margin: 5px;
 }
 
@@ -18,9 +18,7 @@ h1{
 }
 
 .content{
-    max-width: 1024px;
-    background-color: aquamarine;
-
+    width: 1024px;
 }
 
 .bundeslandContainer{
@@ -33,12 +31,36 @@ h1{
     padding: 10px;
 }
 
+.bundeslandContainer:hover{
+    opacity: 0.7;
+}
+
 .bundeslandContainer div:first-child{
     padding-bottom: 10px;
 }
 
 .textColorGrey{
     color: rgb(161,178,197);
+}
+
+#letterArea{
+    display: flex;
+}
+
+.letterBox{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #dddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.letterBox:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 
